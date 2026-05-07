@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        IMAGE = "YOUR_DOCKERHUB_USERNAME/malware-detector"
+        IMAGE = "husna615/malware-detector"
     }
 
     stages {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/YOUR_USERNAME/cyber-def25.git'
+                git 'https://github.com/ha55454/cyber-def25.git'
             }
         }
 
