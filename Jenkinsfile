@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE = "ha55454/malware-detector"
+        IMAGE = "husna615/malware-detector"
     }
 
     stages {
