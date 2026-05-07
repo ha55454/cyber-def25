@@ -2,18 +2,12 @@ pipeline {
     agent any
 
     environment {
-        IMAGE = "husna615/malware-detector"
+        IMAGE = "ha55454/malware-detector"
     }
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/ha55454/cyber-def25.git'
-            }
-        }
-
-        stage('Build Image') {
+        stage('Build Docker Image') {
             steps {
                 sh 'docker build -t $IMAGE .'
             }
