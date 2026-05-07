@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  malware-detector:
+    build: .
+    container_name: cyber-def25-container
+
+    volumes:
+      - ./network_logs:/input/logs
+      - ./output:/output
